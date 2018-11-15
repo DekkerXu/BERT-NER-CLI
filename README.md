@@ -23,23 +23,30 @@ Before started, would like to appreciate for [Google Research Team](https://gith
 | predict_cli.py | simple command line program for testing purpose |
 
 ## Fine-Tune model
+![alt text](https://github.com/JamesGu14/BERT-NER-CLI/blob/master/images/1.png?raw=true "Fine-tune")
 
 
 ## Training with GCP GPU/TPU
 I found this pretty detailed [instructions](https://medium.com/deep-learning-turkey/google-colab-free-gpu-tutorial-e113627b9f5d) of how to deploy code, mount folders and execute .py files with Google Colab and utilizing their FREE TPU/GPU capabilities.
 
-BERT-Base, Uncased or BERT-Large, Uncased need to be unzipped and upload to your Google Drive folder and be mounted.
+BERT-Base, Uncased or BERT-Large, Uncased need to be unzipped and upload to your Google Drive folder and be mounted. 
 
-I used Colab GPU (K80) fine-tuning the model, took me around 30 mins.
+![alt text](https://github.com/JamesGu14/BERT-NER-CLI/blob/master/images/5.png?raw=true)
+
+I used Colab GPU (K80) fine-tuning the model, took me around 30 mins. 
 
 ## Evaluating
-A evaluation script can be found [here](https://github.com/kyzhouhzau/BERT-NER).
+An evaluation script can be found [here](https://github.com/kyzhouhzau/BERT-NER). A quick evaluation with Uncased 12-layer result in 93.26 f1 score. 24-layer result will be tried and provided here later. 
 
 ## Predicting
-A simple command line program was provided here for testing purpose. Simply run
+A simple command line program was provided here for testing purpose. Simply run 
 ```sh
 python predict_cli.py
 ```
-The program will firstly load the model and waiting for inputs.
+The program will firstly load the model and waiting for inputs. 
 
+## Some test results:
+![alt text](https://github.com/JamesGu14/BERT-NER-CLI/blob/master/images/2.png?raw=true)
+![alt text](https://github.com/JamesGu14/BERT-NER-CLI/blob/master/images/3.png?raw=true)
+![alt text](https://github.com/JamesGu14/BERT-NER-CLI/blob/master/images/4.png?raw=true)
 
